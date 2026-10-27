@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff5f5">
+  <meta name="description" content="A little birthday surprise made with love.">
+  <title>Happy Birthday, My Love ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="logo" href="#home">for you <span>♡</span></a>
+    <button id="musicBtn" class="music-btn" type="button">
+      ♫ <span id="musicLabel">Play our song</span>
+    </button>
+  </header>
+
+  <main>
+    <!-- 1. HERO -->
+    <section id="home" class="hero section">
+      <div class="eyebrow"><span>✦</span> A LITTLE SURPRISE FOR YOU <span>✦</span></div>
+
+      <h1>Happy Birthday,<br>
+        <em>My Favorite Person.</em>
+      </h1>
+
+      <p class="hero-text">
+        Today is all about you, and I made a little something
+        to remind you how special you are to me.
+      </p>
+
+      <div class="hero-decoration" aria-hidden="true">♡</div>
+
+      <button class="primary-btn" id="openBtn" type="button">
+        Open your surprise <span>↗</span>
+      </button>
+
+      <p class="scroll-note">MADE WITH LOVE, JUST FOR YOU ↓</p>
+    </section>
+
+    <!-- 2. MEMORIES -->
+    <section id="memories" class="memories section">
+      <div class="section-heading">
+        <p class="eyebrow">OUR LITTLE WORLD</p>
+        <h2>Little moments,<br><em>big feelings.</em></h2>
+        <p>Some of my favorite memories have you in them.</p>
+      </div>
+
+      <div class="photo-grid">
+        <figure class="photo-card photo-one">
+          <img src="assets/foto-1.jpg"
+               alt="A special memory of us"
+               loading="lazy">
+          <figcaption>my favorite person ♡</figcaption>
+        </figure>
+
+        <figure class="photo-card photo-four">
+          <img src="assets/foto-4.jpg"
+               alt="Another beautiful memory of us"
+               loading="lazy">
+          <figcaption>beautiful without even trying ✿</figcaption>
+        </figure>
+
+        <figure class="photo-card photo-three">
+          <img src="assets/foto-3.jpeg"
+               alt="Another beautiful memory of us"
+               loading="lazy">
+          <figcaption>a little sunshine in human form ☀</figcaption>
+        </figure>
+
+        <figure class="photo-card photo-two">
+          <img src="assets/foto-2.jpeg"
+               alt="Another beautiful memory of us"
+               loading="lazy">
+          <figcaption>today, tomorrow, always my favorite ♡</figcaption>
+        </figure>
+      </div>
+
+      <p class="memory-note">
+        You may see just another photo of yourself,
+        <br>
+        but I see a thousand little reasons to adore you. ♡
+      </p>
+    </section>
+
+    <!-- 3. LOVE LETTER -->
+    <section id="letter" class="letter-section section">
+      <p class="eyebrow">SOMETHING FROM MY HEART</p>
+      <h2>A little letter <em>for you.</em></h2>
+      <p class="letter-intro">
+        There are things I want you to know today.
+      </p>
+
+      <button id="letterBtn" class="envelope" type="button"
+              aria-expanded="false" aria-controls="loveLetter">
+        <span class="envelope-icon">💌</span>
+        <span id="letterBtnText">Tap to open your letter</span>
+      </button>
+
+      <article id="loveLetter" class="love-letter" hidden>
+        <p class="letter-date">TO MY FAVORITE PERSON ♡</p>
+        <h3>Happy birthday, sayang.</h3>
+
+        <p>
+          Selamat ulang tahun untuk seseorang yang begitu spesial
+          buat aku. Hari ini adalah hari ketika seseorang seindah
+          kamu hadir di dunia.
+        </p>
+
+        <p>
+          Aku berharap di umur yang baru ini kamu selalu diberi
+          kesehatan, kebahagiaan, ketenangan, dan kekuatan untuk
+          melewati semua hal yang sedang kamu perjuangkan.
+        </p>
+
+        <p>
+          Terima kasih sudah menjadi dirimu sendiri. Semoga kamu
+          selalu dikelilingi hal-hal baik, dan semoga aku bisa
+          menjadi salah satu alasan kecil di balik senyummu.
+        </p>
+
+        <p>
+          This little website may not be much, but every part of it
+          was made with you in mind. I hope you like it.
+        </p>
+
+        <p class="letter-sign">With all my love, <br><em>your person ♡</em></p>
+      </article>
+    </section>
+
+    <!-- 4. BIRTHDAY CAKE -->
+    <section id="wish" class="wish-section section">
+      <p class="eyebrow">ONE MORE THING</p>
+      <h2>Make a <em>wish.</em></h2>
+      <p class="wish-text">
+        Close your eyes, make a wish, and let your new chapter begin.
+      </p>
+
+      <div class="cake-area">
+        <div class="cake" aria-label="Birthday cake">
+          <div class="flame" id="flame">🔥</div>
+          <div class="candle"></div>
+          <div class="cake-top"></div>
+          <div class="cake-middle"></div>
+          <div class="cake-bottom"></div>
+        </div>
+      </div>
+
+      <button id="wishBtn" class="primary-btn" type="button">
+        Blow the candle ✨
+      </button>
+
+      <p id="wishMessage" class="wish-message" aria-live="polite"></p>
+      <div id="confetti" class="confetti" aria-hidden="true"></div>
+    </section>
+
+    <!-- 5. ENDING -->
+    <section class="ending section">
+      <div class="ending-heart">♡</div>
+      <p class="eyebrow">AND ALWAYS REMEMBER</p>
+      <h2>You deserve all the<br><em>love in the world.</em></h2>
+      <p>Happy birthday, my love. Here's to more beautiful memories.</p>
+      <a class="back-link" href="#home">Back to the beginning ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with love, just for you ♡</p>
+  </footer>
+
+  <!-- Optional: put your licensed song in assets/lagu.mp3 -->
+  <audio id="bgMusic" loop preload="none">
+    <source src="assets/lagu.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
