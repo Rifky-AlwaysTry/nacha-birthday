@@ -26,7 +26,7 @@ let autoScrollFrame = null;
 let autoScrollActive = false;
 let lastFrameTime = 0;
 
-const scrollSpeed = 50; // pixel per detik
+const scrollSpeed = 30; // pixel per detik
 
 function smoothAutoScroll(timestamp) {
   if (!autoScrollActive) return;
